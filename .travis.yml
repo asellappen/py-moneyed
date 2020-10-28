@@ -1,4 +1,7 @@
 language: python
+arch:
+  - amd64
+  - ppc64le
 # Make Python 3.5 and 3.6 available:
 python: 3.6
 # See tox.ini for env list
