@@ -36,7 +36,7 @@ matrix:
       arch: ppc64le
       env: TOXENV=pypy
     - env: TOXENV=flake
-     arch: ppc64le
+      arch: ppc64le
     - env: TOXENV=checkmanifest
       arch: ppc64le
 install:
