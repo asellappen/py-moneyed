@@ -19,6 +19,26 @@ matrix:
       env: TOXENV=pypy
     - env: TOXENV=flake
     - env: TOXENV=checkmanifest
+    # poweron support
+    - python: 2.7
+      env: TOXENV=py27
+      arch: ppc64le
+    - python: 3.4
+      env: TOXENV=py34
+      arch: ppc64le
+    - python: 3.5
+      env: TOXENV=py35
+      arch: ppc64le
+    - python: 3.6
+      env: TOXENV=py36
+      arch: ppc64le
+    - python: pypy
+      arch: ppc64le
+      env: TOXENV=pypy
+    - env: TOXENV=flake
+     arch: ppc64le
+    - env: TOXENV=checkmanifest
+      arch: ppc64le
 install:
 - pip install tox
 script:
